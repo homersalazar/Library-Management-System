@@ -10,7 +10,7 @@
 
         <!-- Text content -->
         <div class="relative px-6 md:px-12 text-white">
-            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                 Welcome to the Library Management System
             </h1>
             <p class="text-md md:text-lg lg:text-xl">
