@@ -69,11 +69,11 @@
                 </div>
             </nav>
 
-            <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-green-200 sm:translate-x-0 dark:bg-green-800 dark:border-green-700" aria-label="Sidebar">
+            <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-52 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-green-200 sm:translate-x-0 dark:bg-green-800 dark:border-green-700" aria-label="Sidebar">
                 <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-green-800">
                     <ul class="space-y-2 font-medium">
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <a href="{{ route('dashboard.index') }}" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
                                 <i class="fa-solid fa-gauge text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
                                 <span class="ms-3">Dashboard</span>
                             </a>
@@ -112,7 +112,7 @@
                 </div>
             </aside>
 
-            <div class="p-4 sm:ml-64">
+            <div class="p-5 sm:ml-52 bg-gray-100 min-h-screen pt-20">
                 @yield('content')
             </div>
         {{-- @else
