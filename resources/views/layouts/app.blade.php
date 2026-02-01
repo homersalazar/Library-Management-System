@@ -91,7 +91,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <a href="{{ route('members.index') }}" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
                                 <i class="fa-solid fa-users text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
                                 <span class="flex-1 ms-3 whitespace-nowrap">Members</span>
                             </a>
