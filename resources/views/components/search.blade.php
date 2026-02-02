@@ -4,18 +4,18 @@
 ])
 
 <form method="GET" id="searchForm">
-    <div class="relative">
+    <div class="relative w-full">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
             <i class="fa-solid fa-magnifying-glass w-4 h-4 text-gray-500 "></i>
         </div>
-        <input 
-            type="text" 
+        <input
+            type="text"
             name="search"
             value="{{ request('search') }}"
             id="searchInput"
-            {{ $attributes->merge(['class' => 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 w-full ps-10 p-2.5']) }} 
+            {{ $attributes->merge(['class' => 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 ps-10 p-2.5']) }}
             placeholder="{{ $placeholder }}"
-            @if($required) required @endif 
+            @if($required) required @endif
         />
     </div>
 </form>

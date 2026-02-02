@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CheckOutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MemberController;
 use Illuminate\Support\Facades\Route;
@@ -25,4 +26,8 @@ Route::prefix('dashboard')->group(function () {
 
 Route::prefix('members')->group(function () {
     Route::get('/', [MemberController::class, 'index'])->name('members.index');
+});
+
+Route::prefix('checkout')->group(function () {
+    Route::get('/', [CheckOutController::class, 'index'])->name('checkout.index');
 });

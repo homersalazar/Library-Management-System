@@ -69,7 +69,7 @@
                 </div>
             </nav>
 
-            <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-52 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-green-200 sm:translate-x-0 dark:bg-green-800 dark:border-green-700" aria-label="Sidebar">
+            <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-green-200 sm:translate-x-0 dark:bg-green-800 dark:border-green-700" aria-label="Sidebar">
                 <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-green-800">
                     <ul class="space-y-2 font-medium">
                         <li>
@@ -85,7 +85,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <a href="{{ route('checkout.index') }}" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
                                 <i class="fa-solid fa-book-open-reader text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
                                 <span class="flex-1 ms-3 whitespace-nowrap">Check-out Books</span>
                             </a>
@@ -97,22 +97,64 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <button type="button" class="flex items-center w-full p-2 text-base text-green-900 transition duration-75 rounded-lg group hover:bg-green-100 dark:text-white dark:hover:bg-green-700" aria-controls="setting-dropdown" data-collapse-toggle="setting-dropdown">
                                 <i class="fa-solid fa-gear text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
-                                <span class="flex-1 ms-3 whitespace-nowrap">Settings</span>
-                            </a>
+                                <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Settings</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <ul id="setting-dropdown" class="hidden py-1 space-y-1">
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Roles</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Permissions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Borrowing Rules Configuration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Fine Rules</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Holiday calendar</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <button type="button" class="flex items-center w-full p-2 text-base text-green-900 transition duration-75 rounded-lg group hover:bg-green-100 dark:text-white dark:hover:bg-green-700" aria-controls="report-dropdown" data-collapse-toggle="report-dropdown">
                                 <i class="fa-solid fa-clipboard-list text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
-                                <span class="flex-1 ms-3 whitespace-nowrap">Reports</span>
-                            </a>
+                                <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Reports</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+                            <ul id="report-dropdown" class="hidden py-1 space-y-1">
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Daily / monthly</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Borrowed books</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Overdue books</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Fine collection</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Most borrowed books</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Active users</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Inventory status</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </aside>
 
-            <div class="p-5 sm:ml-52 bg-gray-100 min-h-screen pt-20">
+            <div class="p-5 sm:ml-64 bg-gray-100 min-h-screen pt-20">
                 @yield('content')
             </div>
         {{-- @else
