@@ -3,6 +3,9 @@
 use App\Http\Controllers\CheckOutController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,4 +33,16 @@ Route::prefix('members')->group(function () {
 
 Route::prefix('checkout')->group(function () {
     Route::get('/', [CheckOutController::class, 'index'])->name('checkout.index');
+});
+
+Route::prefix('roles')->group(function () {
+    Route::get('/', [RoleController::class, 'index'])->name('roles.index');
+});
+
+Route::prefix('permissions')->group(function () {
+    Route::get('/', [PermissionController::class, 'index'])->name('permissions.index');
+});
+
+Route::prefix('settings')->group(function () {
+    Route::get('/', [SettingController::class, 'index'])->name('settings.index');
 });
