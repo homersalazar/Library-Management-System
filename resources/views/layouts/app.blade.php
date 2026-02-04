@@ -118,9 +118,6 @@
                                     <a href="{{ route('settings.index') }}" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Borrowing Rules Configuration</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Fine Rules</a>
-                                </li>
-                                <li>
                                     <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Holiday calendar</a>
                                 </li>
                             </ul>
