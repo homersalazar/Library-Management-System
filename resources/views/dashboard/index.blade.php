@@ -4,7 +4,7 @@
     <div class="flex flex-col gap-6">
 
         <!-- STAT CARDS -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <x-card title="Borrowed Books" content="150" />
             <x-card title="Returned Books" content="250" />
             <x-card title="Overdue Books" content="75" />
