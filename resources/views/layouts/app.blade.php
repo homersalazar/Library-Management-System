@@ -17,6 +17,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js'></script>
         <title>Library Management System</title>
     </head>
     <body>
@@ -84,7 +85,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                            <a href="{{ route('book.index') }}" class="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
                                 <i class="fa-solid fa-book text-green-500 dark:text-green-400 fa-lg group-hover:text-green-900 dark:group-hover:text-white"></i>
                                 <span class="flex-1 ms-3 whitespace-nowrap">Books</span>
                             </a>
@@ -118,7 +119,7 @@
                                     <a href="{{ route('settings.index') }}" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Borrowing Rules Configuration</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Holiday calendar</a>
+                                    <a href="{{ route('calendar.index') }}" class="flex items-center w-full p-2 text-green-900 transition duration-75 rounded-lg pl-11 group hover:bg-green-100 dark:text-white dark:hover:bg-green-700">Holiday calendar</a>
                                 </li>
                             </ul>
                         </li>

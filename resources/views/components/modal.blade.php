@@ -9,7 +9,8 @@
     $modalSize = match($size) {
         'sm' => 'max-w-2xl',
         'md' => 'max-w-4xl',
-        'lg' => 'max-w-6xl'
+        'lg' => 'max-w-6xl',
+        'xl' => 'max-w-8xl'
     };
 @endphp
 

@@ -85,7 +85,7 @@
                             <span class="px-4 py-2 bg-amber-200 text-amber-900 rounded-full text-sm font-semibold">Non-circulating</span>
                         </div>
 
-                        <x-button icon="fa-solid fa-plus" class="border-dashed">Add Item Type</x-button>
+                        <x-button icon="fa-solid fa-plus" variant="gray" class="">Add Item Type</x-button>
                     </div>
                 </x-card>
 
@@ -204,6 +204,4 @@
             </div>
         </div>
     </div>
-
-
 @endsection
